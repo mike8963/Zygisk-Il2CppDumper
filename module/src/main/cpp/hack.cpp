@@ -46,7 +46,7 @@ void *hack_thread(void *arg) {
     LOGI("hack thread: %d", gettid());
     int api_level = GetAndroidApiLevel();
     LOGI("api level: %d", api_level);
-    sleep(5);
+    sleep(1);
     void *handle = xdl_open("libil2cpp.so", 0);
     if (handle) {
         il2cpp_dump(handle, game_data_dir);
